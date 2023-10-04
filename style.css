@@ -4,10 +4,15 @@ body {
 }
 
 /* header styles  */
-header {
-    display: flex;
-}
 
 nav {
     display: flex;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
 }
