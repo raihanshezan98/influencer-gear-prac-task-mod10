@@ -50,6 +50,7 @@ nav li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
 }
 
 .banner-content {
@@ -60,6 +61,7 @@ nav li a {
     color: #3A3A3A;
     font-size: 3.25rem;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .banner-description {
@@ -80,10 +82,13 @@ nav li a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
+    margin-top: 10px;
 }
 
-.background-image {
-    width: 50%;
-    background-image: url('images/Circle\ design.svg');   
+.banner-image {
+    width: 33%;
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
 }
