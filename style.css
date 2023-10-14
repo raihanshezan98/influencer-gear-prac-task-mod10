@@ -265,3 +265,22 @@ footer li i {      /*janina how to do right now*/
     color: gray;
     background-color: white;
 }
+
+/* responsive media query */
+
+/* x-small  */
+
+@media screen and (max-width: 576px) {
+    nav  {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 17px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    
+}
