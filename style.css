@@ -6,11 +6,12 @@
     font-family: 'Manrope', sans-serif; } */
 
 
-body{
+body {
     margin: 0;
 }
 
-header, main {
+header,
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -91,7 +92,7 @@ nav li a {
 }
 
 .banner-image {
-    width: 33%;
+    /* width: 33%;   na dileo hoi */
     background-image: url('images/Circle\ design.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -104,7 +105,7 @@ nav li a {
 
 .e-commerce-sites {
     max-width: 1110px;
-    margin: 60px auto 100px auto;
+    margin: 60px auto 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -186,7 +187,7 @@ nav li a {
     justify-content: space-around;
 }
 
-.featured-img img {
+.featured-img>img {
     display: block;
 }
 
@@ -261,7 +262,8 @@ footer li {
     list-style: none;
 }
 
-footer li i {      /*janina how to do right now*/
+footer li i {
+    /*janina how to do right now*/
     color: gray;
     background-color: white;
 }
@@ -271,7 +273,8 @@ footer li i {      /*janina how to do right now*/
 /* x-small  */
 
 @media screen and (max-width: 576px) {
-    nav  {
+
+    nav {
         flex-direction: column;
     }
 
@@ -279,8 +282,49 @@ footer li i {      /*janina how to do right now*/
         margin-right: 17px;
     }
 
-    .banner-container {
+    .banner-container,
+    .featured-section {
         flex-direction: column-reverse;
     }
-    
+
+    .banner-image {
+        width: 70%;
+        background-size: contain;
+    }
+
+    .banner-image>img,
+    .featured-img>img {
+        width: 100%;
+    }
+
+    .banner-content,
+    .featured-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .e-commerce-sites {
+        flex-wrap: wrap;
+        border: none;
+        gap: 15px;
+        margin: 50px 15px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        margin: 0px 15px 100px;
+    }
+
+    .featured-section {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .featured-img {
+        width: 90%;
+    }
+
+    footer {
+        padding: 50px 65px;
+    }
 }
